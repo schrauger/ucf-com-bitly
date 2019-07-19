@@ -60,7 +60,7 @@ class ucf_com_bitly {
 		// check to see if we have this url shortened already. if so, just display that.
 		$cached_data = get_transient($transient_key);
 
-		if ($cached_data === false){
+		if ($cached_data == false){
 			// if we don't have this url shortened, we need to call bit.ly to shorten it.
 			$config = get_option('ucf_com_bitly_options');
 
