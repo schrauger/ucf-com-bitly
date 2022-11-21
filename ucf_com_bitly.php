@@ -11,6 +11,10 @@
 
 include_once(plugin_dir_path(__FILE__) . 'settings.php');
 
+if ( ! defined( 'WP_FS__TIME_WEEK_IN_SEC' ) ) {
+	define( 'WP_FS__TIME_WEEK_IN_SEC', 7 * 86400 );
+}
+
 class ucf_com_bitly {
 
 	const shortcode                 = 'ucf_com_bitly'; // what people type into their page
